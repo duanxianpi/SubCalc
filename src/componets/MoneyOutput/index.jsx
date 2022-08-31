@@ -64,7 +64,7 @@ export default class MoneyOutput extends Component {
         if (this.state.isSucced) {
             return (
                 <div>
-                    <h2>Result</h2>
+                    <h2>The Money Need to be Deposite</h2>
                     <h3>Total: ${totalMoney.toFixed(2)}</h3>
                     {Object.keys(this.state.resultMoney).map(str => parseFloat(str)).sort((a, b) => b - a).map((unit) => {
                         return <OutputItem key={unit} value={this.state.resultMoney[unit.toString()]}>${unit}</OutputItem>

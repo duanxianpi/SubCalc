@@ -7,7 +7,7 @@ export default class OutputItem extends Component {
     const { value } = this.props
     const unitDescribe = this.props.children
     return (
-      <Row style={{ height: "54px" }} > {unitDescribe} <Input type="number" readOnly value={value} /></Row>
+      <Row> {unitDescribe} <Input type="number" defaultValue={0} readOnly value={value} /></Row>
     )
   }
 }

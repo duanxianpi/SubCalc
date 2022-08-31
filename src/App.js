@@ -11,9 +11,9 @@ export default class App extends Component {
     return (
       <div>
         <Row type="flex" justify="center" align="middle">
-          <Col style={{margin: "2em"}}><MoneyInput /></Col>
-          <Col style={{margin: "2em"}}><CalcButton /></Col>
-          <Col style={{margin: "2em"}}><MoneyOutput /></Col>
+        <Col style={{margin: "2em"}}><MoneyInput /></Col>
+        <Col style={{margin: "2em"}}><CalcButton /></Col>
+        <Col style={{margin: "2em"}}><MoneyOutput /></Col>
         </Row>
 
       </div>
