@@ -7,8 +7,8 @@ export default class CalcButton extends Component {
     render() {
         return (
             <Row align="bottom">
-                <Col>输入Float<Input type="number" defaultValue={150} onInput={(e)=>{this.setState({floatMoney:e.target.value})}}></Input></Col>
-                <Col ><Button onClick={() => { PubSub.publish('Calc',this.state.floatMoney); }}>按我计算</Button></Col>
+                <Col><b>Enter the Float</b><Input type="number" defaultValue={150} onInput={(e)=>{this.setState({floatMoney:e.target.value})}}></Input></Col>
+                <Col ><Button onClick={() => { PubSub.publish('Calc',this.state.floatMoney); }}>Calculate</Button></Col>
             </Row>
         )
     }
