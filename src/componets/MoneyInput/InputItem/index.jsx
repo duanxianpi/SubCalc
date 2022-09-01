@@ -7,7 +7,7 @@ export default class InputItem extends Component {
         const { itemValue } = this.props
         const unitDescribe = this.props.children
         return (
-            <Row> {unitDescribe} <Input type="number" defaultValue={0} onFocus={(e) => { e.target.select() }} onChange={(e) => {
+            <Row> {unitDescribe} <Input type="number" defaultValue={0} onSelect={e => {e.preventDefault()}} onFocus={(e) => { e.target.select() }} onChange={(e) => {
                 this.props.updateMoneyInput({ [itemValue]: e.target.value })
             }} /></Row>
         )
